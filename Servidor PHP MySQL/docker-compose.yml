@@ -1,0 +1,27 @@
+version: "3"
+
+services:
+  miservicio_mysql:
+    image: mysql:5.7
+    environment:
+      - MYSQL_DATABASE=Servilleta
+      - MYSQL_ROOT_PASSWORD=gta6xs1228
+      - MYSQL_USER=SuServilleta
+      - MYSQL_PASSWORD=gta6xs
+    volumes:
+      # Montamos un volumen para MySQL para no perder los datos de bd
+      - ./dbarchivos:/var/lib/mysql
+      - ./dbconf:/etc/mysql/conf.d
+    expose:
+      - 3306
+    ports:
+      - 3306:3306
+
+  phpache:
+    image: webdevops/php-apache:7.3
+
+    ports:
+        - "80:80"
+
+    volumes:
+        - ./server:/app
