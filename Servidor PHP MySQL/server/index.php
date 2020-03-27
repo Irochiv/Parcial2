@@ -23,7 +23,7 @@
 
   <body bgcolor = #17202A>
     <font color="#fff0ff">
-    <CENTER><h1>Actualización</h1>
+    <CENTER><h1>Holi</h1>
     </font>
    <img src = "https://i.pinimg.com/originals/38/bc/4d/38bc4d97808f849f0bc1ed98c2b83996.jpg">
    </CENTER>
