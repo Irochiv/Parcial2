@@ -13,9 +13,9 @@ services:
       - ./dbarchivos:/var/lib/mysql
       - ./dbconf:/etc/mysql/conf.d
     expose:
-      - 3306
+      - 3305
     ports:
-      - 3306:3306
+      - 3305:3305
 
   phpache:
     image: webdevops/php-apache:7.3
