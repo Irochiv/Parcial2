@@ -15,7 +15,7 @@ services:
     expose:
       - 3306
     ports:
-      - 3306:3306
+      - 3906:3306
 
   phpache:
     image: webdevops/php-apache:7.3
